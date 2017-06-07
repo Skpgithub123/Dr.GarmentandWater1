@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="Email ID"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:drawablePadding="15dp"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:id="@+id/editemail"
+        android:layout_marginTop="82dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/ivDone_email"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:background="@drawable/ic_done_black_24dp"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/editemail"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="New Email ID"
+        android:id="@+id/textView3"
+        android:textSize="15sp"
+        android:layout_marginTop="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp" />
+</RelativeLayout>

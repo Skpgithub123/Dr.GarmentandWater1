@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/relative"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_shadow"
+        android:elevation="5dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:src="@drawable/capture"
+            android:layout_height="180dp"
+            android:id="@+id/menimagedrycleaning"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="240dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:text="Itemname"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:id="@+id/txt_menitemname"
+            android:layout_marginStart="26dp"
+            android:layout_alignBottom="@+id/menimagedrycleaning"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Itemprice"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:id="@+id/txt_menitemprice"
+            android:layout_above="@+id/txt_menitemname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_box_black_24dp"
+            android:tint="@color/com_facebook_blue"
+            android:id="@+id/img_menadd"
+            android:layout_marginStart="31dp"
+            android:onClick="myClickHandler"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_menitemprice"
+            android:layout_alignParentEnd="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:textSize="18sp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:id="@+id/txt_itemqtyincrement"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_menadd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_mensub"
+            android:src="@drawable/ic_indeterminate_check_box_black_24dp"
+            android:tint="@color/com_facebook_blue"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_itemqtyincrement" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:background="#ff1111"
+            android:visibility="invisible"
+            android:id="@+id/textView57"
+            android:textSize="32dp"
+            android:layout_below="@+id/txt_menitemprice"
+            android:layout_toEndOf="@+id/txt_itemqtyincrement" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

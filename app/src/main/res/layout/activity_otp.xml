@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rr">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Verification"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/otpsummary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:maxLines="2"
+        android:gravity="center"
+        android:layout_marginTop="127dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView"
+        android:id="@+id/editText2">
+
+
+    <EditText
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="Code"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/editverfiycode"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Verify Code"
+        android:background="@drawable/login_btn"
+        android:textColor="@android:color/white"
+        android:id="@+id/btn_verfiycode"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:elevation="5dp"
+        android:backgroundTint="@color/cb_dark_grey"
+        android:background="@drawable/bordor_shadow_promo"
+        android:padding="2dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/promocodedesc"
+        android:textColor="@color/white"
+        android:id="@+id/textView62"
+        android:textSize="17sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_margin="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/promocode"
+        android:textSize="25sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/yellow_800"
+        android:id="@+id/txt_promocodetitle"
+        android:layout_marginTop="15dp"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/minamount"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/textView64"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/yellow_800"
+                android:id="@+id/txt_minamount"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/promoamount"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/textView65"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/yellow_800"
+                android:id="@+id/txt_promoamount"
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Percentage"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/tvpercentage"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text=""
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textColor="@color/yellow_800"
+                android:id="@+id/txt_percentagevalue"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:background="@drawable/login_btn"
+            android:textColor="@android:color/white"
+            android:id="@+id/btnpromoapply_directly"
+            android:layout_margin="15dp"
+             />
+
+    </LinearLayout>
+
+</LinearLayout>

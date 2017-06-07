@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:background="@drawable/border_shadow"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/txt_deliveryname_water"
+            android:layout_marginStart="29dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="33dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:lines="3"
+            android:id="@+id/txt_deliveryaddrconfirmation_water"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_deliveryname_water"
+            android:layout_alignStart="@+id/txt_deliveryname_water"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Delivers To"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:fontFamily=""
+            android:id="@+id/textView69"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pay Now"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:onClick="ProceedToPay"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:background="@drawable/login_btn"
+            android:id="@+id/btn_selectdeliveryaddress_water"
+            android:layout_below="@+id/txt_deliveryaddrconfirmation_water"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="70dp" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

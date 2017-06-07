@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/blue_grey_200"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="270dp"
+        android:layout_height="wrap_content">
+
+
+        <com.daimajia.slider.library.SliderLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/sliderlayout"
+            >
+
+        </com.daimajia.slider.library.SliderLayout>
+
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_indicater">
+
+        </com.daimajia.slider.library.Indicators.PagerIndicator>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/capture"
+            android:id="@+id/imagewashfold"
+            />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="11sp"
+                android:text="washandfold"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:typeface="serif"
+                android:textColor="@color/blue"
+                android:id="@+id/txt_washfold"
+                android:lines="3"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagewashiron"
+        android:background="@drawable/capture"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="washandiron"
+        android:textSize="11sp"
+        android:textColor="@color/blue"
+        android:gravity="center"
+        android:lines="3"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:id="@+id/txt_washiron"
+      />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imagedrycleaning"
+                android:background="@drawable/capture"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="11sp"
+                android:text="drycleaning"
+                android:textColor="@color/blue"
+                android:lines="3"
+                android:gravity="center"
+                android:typeface="serif"
+                android:id="@+id/txt_drycleaning"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+   <!-- <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Minimum Order="
+        android:textStyle="bold"
+        android:id="@+id/textView8"
+        android:textColor="@color/tabsScrollColor"
+        android:layout_below="@+id/txt_washiron"
+        android:layout_toStartOf="@+id/txtminimum"
+        android:layout_marginTop="75dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/tabsScrollColor"
+        android:textStyle="bold"
+        android:text=""
+        android:id="@+id/txtminimum"
+        android:layout_alignTop="@+id/textView8"
+        android:layout_alignEnd="@+id/imagewashiron" />
+-->
+
+</ScrollView>

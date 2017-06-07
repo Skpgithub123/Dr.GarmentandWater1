@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+
+       <!-- <item android:id="@+id/nav_spinnerselect"
+            android:title="Water"
+            android:icon="@drawable/ic_add_white_24dp"
+            />-->
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_recentorders"
+            android:icon="@drawable/ic_business_center_black_24dp"
+            android:title="My Orders" />
+       <!-- <item
+            android:id="@+id/nav_address"
+            android:visible="false"
+            android:icon="@drawable/ic_location_on_black_24dp"
+            android:title="Delivery Address" />
+-->
+        <item android:id="@+id/nav_mywallet"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="My Wallet"/>
+
+       <!-- <item android:id="@+id/nav_monthlypack"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="Monthly Pack"/>-->
+
+        <item
+            android:id="@+id/nav_faqhelp"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="FAQ" />
+
+        <item android:id="@+id/nav_referearn"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Refer and Earn"/>
+
+        <item android:id="@+id/nav_changepassword"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Change Password"/>
+
+        <item android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_phone_black_24dp"
+            android:title="Contact Us"/>
+
+        <item android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_info_black_24dp"
+            android:title="About Us"/>
+
+
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/ic_power_settings_new_black_24dp"
+            android:title="Sign Out"/>
+
+       <!-- <item android:id="@+id/nav_spinnerselect1"
+            android:title="Laundry"
+            android:icon="@drawable/ic_add_white_24dp"/>
+
+
+        <item android:id="@+id/nav_booknow"
+            android:visible="false"
+            android:title="Book Now"/>
+
+        <item android:id="@+id/nav_monthlypackforlaundry"
+            android:visible="false"
+            android:icon="@drawable/ic_shopping_basket_black_24dp"
+            android:title="Monthly Pack"/>-->
+
+
+
+
+    </group>
+
+  <!--  <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+
+
+
+
+
+</menu>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/mainrr"
+    android:layout_height="wrap_content"
+    android:clickable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/border_shadow"
+        android:elevation="5dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:id="@+id/relativeforbisleri">
+
+
+
+        <ImageView
+            android:id="@+id/ivOrgLogobisleri"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/bisleri"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Bisleri"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_bisleri"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="41dp"
+            android:layout_alignTop="@+id/ivOrgLogobisleri"
+            android:layout_toEndOf="@+id/ivOrgLogobisleri" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Liters"
+            android:textSize="18sp"
+            android:id="@+id/textView31"
+            android:textStyle="bold"
+            android:layout_below="@+id/txt_bisleri"
+            android:layout_alignStart="@+id/txt_bisleri"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Rs 70"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_bisprice"
+            android:layout_below="@+id/textView31"
+            android:layout_alignStart="@+id/textView31"
+            android:layout_marginTop="10dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_shadow"
+        android:elevation="5dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_below="@+id/relativeforbisleri"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeforkinley">
+
+
+        <ImageView
+            android:id="@+id/ivNormal"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/kinley"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="18sp"
+            android:text="Kinley"
+            android:textStyle="bold"
+            android:id="@+id/txt_kinley"
+            android:layout_alignTop="@+id/ivNormal"
+            android:layout_toEndOf="@+id/ivNormal"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="41dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="18sp"
+            android:text="Liters"
+            android:textStyle="bold"
+            android:id="@+id/textView34"
+            android:layout_below="@+id/txt_kinley"
+            android:layout_alignStart="@+id/txt_kinley"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Rs 70"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_kinleyprice"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView34"
+            android:layout_alignStart="@+id/textView34" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@drawable/border_shadow"
+        android:layout_marginTop="10dp"
+        android:elevation="5dp"
+        android:clickable="true"
+        android:padding="5dp"
+        android:id="@+id/relativefornormal"
+        android:layout_below="@+id/relativeforkinley"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:id="@+id/ivOrgLogonormal"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:background="@drawable/normal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Normal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_normal"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/ivOrgLogonormal"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="41dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Liters"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView37"
+            android:layout_below="@+id/txt_normal"
+            android:layout_alignStart="@+id/txt_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Rs 30"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:id="@+id/txt_normalprice"
+            android:layout_below="@+id/textView37"
+            android:layout_alignStart="@+id/textView37" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

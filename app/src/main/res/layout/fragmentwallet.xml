@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wallet"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+
+        <ImageView
+            android:id="@+id/ivback_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_arrow_back_white_24dp" />
+
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_shadow"
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_below="@+id/textView67"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="44dp"
+        android:id="@+id/relativeLayout">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:hint="Amount"
+            android:textAlignment="center"
+            android:id="@+id/editwalletmoney"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="64dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btn_addmoneytowallet" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Money"
+            android:textColor="@android:color/white"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:onClick="AddMoney"
+            android:background="@drawable/login_btn"
+            android:id="@+id/btn_addmoneytowallet"
+            android:layout_marginTop="57dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/editwalletmoney"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Your Wallet Balance"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textView48"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/totalprice"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/textView67"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView48"
+        android:layout_alignStart="@+id/textView48"
+        android:layout_marginStart="69dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text=""
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:id="@+id/txt_walletbalance"
+        android:layout_alignTop="@+id/textView67"
+        android:layout_toEndOf="@+id/textView67" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="price"
+        android:id="@+id/txt_testing"
+        android:visibility="gone"
+        android:layout_below="@+id/txt_walletbalance"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout" />
+</RelativeLayout>

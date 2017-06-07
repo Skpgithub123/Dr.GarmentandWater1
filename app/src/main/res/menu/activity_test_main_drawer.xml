@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home1"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_photos"
+            android:title="Address" />
+        <item
+            android:id="@+id/nav_movies"
+            android:title="FAQ" />
+
+        <item
+            android:id="@+id/nav_mp"
+            android:title="Monthly PAck" />
+
+        <item
+            android:id="@+id/nav_notifications"
+            android:title="Change Passowrd" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Refer and Earn" />
+    </group>
+
+</menu>

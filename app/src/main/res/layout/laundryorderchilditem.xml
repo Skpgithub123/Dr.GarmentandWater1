@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#ffffff"
+        card_view:cardCornerRadius="4dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <TextView
+                android:text="Transaction Number"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:id="@+id/Laundry_transactionno"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="amount"
+                android:layout_width="wrap_content"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:padding="5dp"
+                android:layout_gravity="right"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:id="@+id/Laundry_amount"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <TextView
+            android:text="created_date"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:textColor="#969494"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/Laundry_careatedate"
+            android:layout_height="wrap_content" />
+
+
+
+
+        <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fa0505"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:layout_marginRight="3dp"
+            android:singleLine="true"
+            android:id="@+id/Laundry_status"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:text="Walletid"
+            android:layout_width="match_parent"
+            android:textSize="18sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_marginRight="3dp"
+            android:singleLine="true"
+            android:id="@+id/Laundry_id"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

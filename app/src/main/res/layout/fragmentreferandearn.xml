@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+  <!--  <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refer and Earn"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+    </android.support.v7.widget.Toolbar>-->
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout4">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:text="Friend Earn's"
+            android:textSize="17sp"
+            android:id="@+id/txtfrnd"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="89dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@+id/textView51"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txtfrndearnvalue"
+            android:layout_marginStart="35dp"
+            android:layout_alignTop="@+id/txtfrnd"
+            android:layout_toEndOf="@+id/txtfrnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textAlignment="center"
+            android:text="You Earn"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/textView51"
+            android:layout_centerVertical="true"
+            android:layout_alignStart="@+id/txtfrnd" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:id="@+id/txtyouearnvalue"
+            android:layout_alignTop="@+id/textView51"
+            android:layout_alignStart="@+id/txtfrndearnvalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Code"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_orange_dark"
+            android:id="@+id/txtrefercode"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Share Your Referral Code"
+            android:id="@+id/textView50"
+            android:layout_above="@+id/txtrefercode"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentStart="true">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgwhatsapp"
+            android:src="@drawable/whatsapp"
+            android:layout_marginStart="49dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="48dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgemail"
+            android:src="@drawable/email"
+            android:layout_alignTop="@+id/imgwhatsapp"
+            android:layout_toEndOf="@+id/imgwhatsapp"
+            android:layout_marginStart="36dp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgfb"
+            android:src="@drawable/fb"
+            android:layout_marginStart="50dp"
+            android:layout_alignTop="@+id/imgemail"
+            android:layout_toEndOf="@+id/imgemail" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgmsg"
+            android:src="@drawable/messages"
+            android:layout_alignTop="@+id/imgtwitter"
+            android:layout_toEndOf="@+id/imgwhatsapp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imgtwitter"
+            android:src="@drawable/twitter"
+            android:layout_below="@+id/textView54"
+            android:layout_alignEnd="@+id/imgfb"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="34dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="WhatsApp"
+            android:textStyle="bold"
+            android:id="@+id/textView52"
+            android:layout_below="@+id/imgwhatsapp"
+            android:layout_alignStart="@+id/imgwhatsapp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Email"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:id="@+id/textView53"
+            android:layout_below="@+id/imgemail"
+            android:layout_alignStart="@+id/imgemail"
+            android:layout_alignEnd="@+id/imgemail" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="FaceBook"
+            android:id="@+id/textView54"
+            android:layout_below="@+id/imgfb"
+            android:layout_alignStart="@+id/imgfb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Message"
+            android:id="@+id/textView55"
+            android:layout_below="@+id/imgmsg"
+            android:layout_alignStart="@+id/imgmsg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:text="Twitter"
+            android:id="@+id/textView56"
+            android:layout_alignTop="@+id/textView55"
+            android:layout_alignStart="@+id/imgtwitter"
+            android:layout_alignEnd="@+id/imgtwitter" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

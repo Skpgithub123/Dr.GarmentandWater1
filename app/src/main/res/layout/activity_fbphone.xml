@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editmobilefb"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:drawableTint="@color/red_400"
+        android:maxLength="10"
+        android:textColorHint="#f7646363"
+        android:textAlignment="center"
+        android:padding="13dp"
+        android:theme="@style/MyEditTextTheme"
+        android:background="@drawable/loginshape"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/btnfbmobile"
+        android:textColor="@color/white"
+        android:background="@drawable/login_btn"
+        android:layout_marginBottom="104dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

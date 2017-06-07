@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1017395782160",
+    "project_id": "drgarmentandwater"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1017395782160:android:998b6f5a97d8624d",
+        "android_client_info": {
+          "package_name": "com.uohmac.com.drgarmentandwater"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1017395782160-ppd1b8o8u27gqaho9oqi6vkg8acnej0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uohmac.com.drgarmentandwater",
+            "certificate_hash": "4D9D8D463250186E6EB3D4C1778917B6BF63D574"
+          }
+        },
+        {
+          "client_id": "1017395782160-u7kffu65jgurfuap294s2do1t4p66ldm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn7JA95KPzeMxnP9Yv_htZxNNNyZRQeCo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Order No"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/textView9"
+            android:layout_marginTop="27dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="orderno"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_ordernovalue"
+            android:layout_marginStart="20dp"
+            android:layout_above="@+id/date_value"
+            android:layout_toEndOf="@+id/textView9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="date"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:id="@+id/date_value"
+            android:layout_below="@+id/textView9"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="totalamount"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_totalorderprice"
+            android:layout_alignTop="@+id/txt_ordernovalue"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="pickupdate"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_pickupdatevalue"
+            android:layout_below="@+id/date_value"
+            android:layout_alignStart="@+id/txt_ordernovalue" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="pickuptime"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_pickuptimevalue"
+            android:textStyle="normal"
+            android:layout_below="@+id/txt_pickupdatevalue"
+            android:layout_alignEnd="@+id/txt_pickupdatevalue" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/totalprice"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/textView74"
+            android:layout_alignBottom="@+id/txt_totalorderprice"
+            android:layout_toStartOf="@+id/txt_totalorderprice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="status"
+            android:layout_marginTop="5dp"
+            android:id="@+id/txt_status"
+            android:layout_below="@+id/txt_pickuptimevalue"
+            android:layout_alignStart="@+id/txt_pickupdatevalue" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txt_status"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Pick Up Date:"
+        android:textStyle="bold"
+        android:id="@+id/textView75"
+        android:layout_alignBottom="@+id/txt_pickupdatevalue"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:text="Pick Up Time:"
+        android:id="@+id/textView76"
+        android:layout_alignTop="@+id/txt_pickuptimevalue"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:text="Status:"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView77"
+        android:layout_below="@+id/txt_pickuptimevalue"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+        android:tint="@color/blue_A700"
+        android:layout_alignTop="@+id/textView75"
+        android:layout_alignEnd="@+id/txt_totalorderprice"
+        android:layout_marginEnd="16dp" />
+
+
+</RelativeLayout>

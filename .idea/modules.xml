@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CordovaLib/CordovaLib.iml" filepath="$PROJECT_DIR$/CordovaLib/CordovaLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dr.GarmentandWater.iml" filepath="$PROJECT_DIR$/Dr.GarmentandWater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/aa/aa.iml" filepath="$PROJECT_DIR$/aa/aa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sdkui/sdkui.iml" filepath="$PROJECT_DIR$/sdkui/sdkui.iml" />
+    </modules>
+  </component>
+</project>

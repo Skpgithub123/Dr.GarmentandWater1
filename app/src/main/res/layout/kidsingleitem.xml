@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_shadow"
+        android:elevation="5dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="200dp"
+            android:src="@drawable/capture"
+            android:layout_height="180dp"
+            android:id="@+id/kidimagedrycleaning"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="240dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="15sp"
+            android:text="Itemname"
+            android:id="@+id/txt_kiditemname"
+            android:layout_marginStart="26dp"
+            android:layout_alignBottom="@+id/kidimagedrycleaning"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Itemprice"
+            android:id="@+id/txt_kiditemprice"
+            android:layout_above="@+id/txt_kiditemname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="23dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_box_black_24dp"
+            android:tint="@color/com_facebook_blue"
+            android:id="@+id/img_kidadd"
+            android:layout_marginStart="31dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_kiditemprice" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/txt_itempriceincrementforkid"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/img_kidadd" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_kidsub"
+            android:src="@drawable/ic_indeterminate_check_box_black_24dp"
+            android:tint="@color/com_facebook_blue"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/txt_itempriceincrementforkid" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text=""
+            android:id="@+id/textView59"
+            android:background="#ff0707"
+            android:visibility="invisible"
+            android:layout_alignBaseline="@+id/txt_kiditemname"
+            android:layout_alignBottom="@+id/txt_kiditemname"
+            android:layout_alignStart="@+id/img_kidsub" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

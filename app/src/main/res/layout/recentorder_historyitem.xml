@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ph_user"
+            android:id="@+id/ic_recentorderimage"
+            android:layout_marginTop="31dp"
+            android:layout_below="@+id/txt_pickuptimevalue"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Item Name:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/textView70"
+            android:layout_alignTop="@+id/ic_recentorderimage"
+            android:layout_alignStart="@+id/textView71" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Item Quantity:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/textView71"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/textView70"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Qty"
+            android:id="@+id/txt_qtyvalue"
+            android:textStyle="bold"
+            android:layout_alignBottom="@+id/textView71"
+            android:layout_toEndOf="@+id/textView71" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="itemname"
+            android:textStyle="bold"
+            android:id="@+id/txt_itemnamevalue"
+            android:layout_alignTop="@+id/textView70"
+            android:layout_toEndOf="@+id/textView70" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="price"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:id="@+id/txt_pricesingleitem"
+        android:layout_alignBottom="@+id/ic_recentorderimage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/totalprice"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:id="@+id/textView80"
+        android:layout_alignTop="@+id/txt_pricesingleitem"
+        android:layout_toStartOf="@+id/txt_pricesingleitem" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/txt_pricesingleitem"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+
+

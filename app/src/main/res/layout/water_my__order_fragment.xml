@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey_300"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.saravanan.waterandlander_recentorder.WaterMY_Order">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/watermyorderhistory" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="It seems like you haven't ordered anything yet.Why not do it right now"
+        android:background="@color/grey_300"
+        android:visibility="gone"
+        android:typeface="serif"
+        android:textSize="17sp"
+        android:id="@+id/watermyordertextview"
+        android:gravity="center"/>
+
+</LinearLayout>

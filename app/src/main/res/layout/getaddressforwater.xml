@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/linearlayout_wateraddr"
+    android:layout_height="match_parent">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_400"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_addcurrentlocation"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:typeface="serif"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/ic_gps_fixed_black_24dp"
+            android:textSize="20dp"
+            android:layout_margin="15dp"
+            android:text="Add Current Location"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Full Name"
+        android:background="@drawable/drawrectangle"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:id="@+id/et_fullname"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Mobile No."
+        android:maxLines="1"
+        android:inputType="number"
+        android:maxLength="10"
+        android:background="@drawable/drawrectangle"
+        android:textAlignment="center"
+        android:imeOptions="actionNext"
+        android:id="@+id/et_mobilenumber"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Flat No"
+        android:maxLines="1"
+        android:background="@drawable/drawrectangle"
+        android:textAlignment="center"
+        android:imeOptions="actionNext"
+        android:id="@+id/flatno_water"/>
+
+
+    <EditText
+        android:id="@+id/etaddress1_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address Line 1(Company Name,House No,Building)"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:imeOptions="actionNext"
+        android:background="@drawable/drawrectangle"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+
+    <EditText
+        android:id="@+id/etaddress2_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/drawrectangle"
+        android:hint="Address Line 2(Colony,Street,Locatlity/Area)"
+        android:imeActionId="@+id/login"
+        android:textAlignment="center"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:id="@+id/etcity_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="City"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:background="@drawable/drawrectangle"
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:id="@+id/etcountry_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Country"
+        android:imeActionId="@+id/login"
+        android:imeOptions="actionUnspecified"
+        android:maxLines="1"
+        android:textAlignment="center"
+        android:background="@drawable/drawrectangle"
+        android:singleLine="true"/>
+
+
+    <EditText
+        android:id="@+id/etpincode_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="PinCode"
+        android:imeActionId="@+id/login"
+        android:textAlignment="center"
+        android:background="@drawable/drawrectangle"
+        android:imeOptions="actionNext"
+        android:maxLines="1"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/etaddresstype_water"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Address Title (Optional) e.g:office"
+        android:imeActionId="@+id/login"
+        android:textAlignment="center"
+        android:imeOptions="actionDone"
+        android:maxLines="1"
+        android:background="@drawable/drawrectangle"
+        android:singleLine="true"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set as Defalut"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:id="@+id/cb_defaultaddr" />
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_saveaddrforwater"
+        android:text="SAVE"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@drawable/login_btn"/>
+
+
+
+</LinearLayout>
+
+</ScrollView>
