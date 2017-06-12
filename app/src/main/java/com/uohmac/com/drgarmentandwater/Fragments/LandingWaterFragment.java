@@ -76,7 +76,7 @@ public class LandingWaterFragment extends Fragment {
     String res,response_checkdelivery,bisleri,kinley,normal,price_bisleri,price_kinley,price_normal,bis_img,kinley_img,normal_img;
     JSONObject jobj_parent,jobj1,jobj2,jobj3;
     JSONArray jsonArray;
-    TextView txt_bisname,txt_kinleyname,txt_normalname,txt_bisprice,txt_kinleyprice,txt_normalprice;
+    TextView txt_pincodeheading,txt_bisname,txt_kinleyname,txt_normalname,txt_bisprice,txt_kinleyprice,txt_normalprice;
     private static final int PERMISSION_REQUEST_CODE = 200;
     ListView lv_waterbrands;
 
@@ -88,7 +88,7 @@ public class LandingWaterFragment extends Fragment {
     Dialog dialog_tockeckdelivery;
     EditText ed_deliverytocheck;
     Button btn_checkdelivery;
-    ImageView img_closecheckdeliverypopup;
+   // ImageView img_closecheckdeliverypopup;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -139,8 +139,9 @@ public class LandingWaterFragment extends Fragment {
         dialog_tockeckdelivery.setContentView(R.layout.dialog_tocheckdelivery);
         ed_deliverytocheck = (EditText)dialog_tockeckdelivery.findViewById(R.id.ed_pincodeentry);
         btn_checkdelivery = (Button)dialog_tockeckdelivery.findViewById(R.id.btn_checkdelivery);
-        img_closecheckdeliverypopup = (ImageView)dialog_tockeckdelivery.findViewById(R.id.img_closecheckdeliverypopup);
-
+        txt_pincodeheading = (TextView)dialog_tockeckdelivery.findViewById(R.id.txt_pincodeheading);
+        //img_closecheckdeliverypopup = (ImageView)dialog_tockeckdelivery.findViewById(R.id.img_closecheckdeliverypopup);
+            txt_pincodeheading.setText("Enter Pincode");
 
         dialog_tockeckdelivery.show();
 
@@ -160,12 +161,12 @@ public class LandingWaterFragment extends Fragment {
         });
 
 
-        img_closecheckdeliverypopup.setOnClickListener(new View.OnClickListener() {
+       /* img_closecheckdeliverypopup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog_tockeckdelivery.dismiss();
             }
-        });
+        });*/
 
 
         if(AppNetworkInfo.isConnectingToInternet(getActivity())){
@@ -273,7 +274,7 @@ public class LandingWaterFragment extends Fragment {
     private void checkfordelivery(){
         mProgressDialog = new ProgressDialog(getActivity());
         mProgressDialog.setIndeterminate(true);
-        mProgressDialog.setMessage("Please Wait...");
+        mProgressDialog.setMessage("Checking...");
         mProgressDialog.show();
 
 
@@ -313,10 +314,15 @@ public class LandingWaterFragment extends Fragment {
                     String messgae = jsonObject_checkdelivery.getString("msg");
 
                     if (status.equals("1")) {
-                        Toast.makeText(getActivity(), messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "We got you covered", Toast.LENGTH_LONG).show();
                         dialog_tockeckdelivery.dismiss();
+                       // btn_checkdone.setVisibility(View.VISIBLE);
+                        //btn_checkdelivery.setVisibility(View.GONE);
+
+
                     } else if (status.equals("0")) {
-                        Toast.makeText(getActivity(), messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(getActivity(), "The seller does not ship to this Pincode.", Toast.LENGTH_LONG).show();
+                        txt_pincodeheading.setText("Try another Pincode");
                     }
 
                 } catch (Exception e) {

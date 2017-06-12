@@ -47,16 +47,25 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="5dp"
-        android:layout_margin="10dp"
         android:elevation="5dp"
         android:padding="5dp"
         android:background="@drawable/bordor_shadow_promo"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/txt_pincodeheading"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
 
 
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/img_closecheckdeliverypopup"
@@ -64,13 +73,14 @@
             android:tint="@color/red_A400"
             android:layout_gravity="right"
 
-            />
+            />-->
 
 
 
 
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
+            android:layout_marginTop="70dp"
             android:layout_height="wrap_content">
 
 
@@ -78,8 +88,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/ed_pincodeentry"
-                android:hint="Enter Delivery Pincode"
+                android:hint="Enter Pincode"
+                android:inputType="number"
                 android:maxLines="1"
+                android:maxLength="6"
+                android:layout_marginTop="50dp"
                 android:imeOptions="actionDone"
                  />
 
@@ -88,19 +101,40 @@
 
 
         <Button
-            android:layout_width="200dp"
+            android:layout_width="400dp"
             android:layout_height="wrap_content"
-            android:text="Check"
+            android:text="Check Delivery"
             android:typeface="serif"
             android:textStyle="bold"
             android:textAllCaps="false"
             android:textSize="20sp"
             android:layout_gravity="center"
-            android:background="@drawable/login_btn"
+            android:background="@android:color/holo_blue_dark"
             android:textColor="@android:color/white"
             android:id="@+id/btn_checkdelivery"
             android:layout_marginTop="70dp"
             />
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                android:textSize="20sp"
+                android:background="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:id="@+id/btn_checkdone"
+                />
+
+        </LinearLayout>-->
 
 
 

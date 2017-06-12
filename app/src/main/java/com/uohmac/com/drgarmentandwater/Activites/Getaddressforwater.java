@@ -756,7 +756,7 @@ public class Getaddressforwater extends AppCompatActivity implements OnMapReadyC
                     String messgae = jsonObject_checkdelivery.getString("msg");
 
                     if (status.equals("1")) {
-                        Toast.makeText(Getaddressforwater.this, messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(Getaddressforwater.this, "We got you covered", Toast.LENGTH_LONG).show();
                         UpdateAddressforwater();
                         Intent i = new Intent(Getaddressforwater.this, DeliveryAddrDetailsforWater.class);
                         edit_address.putString("flatno_water", etflatno.getText().toString());
@@ -769,7 +769,7 @@ public class Getaddressforwater extends AppCompatActivity implements OnMapReadyC
                         edit_address.commit();
                         startActivity(i);
                     } else if (status.equals("0")) {
-                        Toast.makeText(Getaddressforwater.this, messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(Getaddressforwater.this, "The seller does not ship to this Pincode.", Toast.LENGTH_LONG).show();
                     }
 
                 } catch (Exception e) {

@@ -1207,7 +1207,7 @@ public class Getaddressforlaundry extends AppCompatActivity implements OnMapRead
                     String messgae = jsonObject_checkdelivery.getString("msg");
 
                     if (status.equals("1")) {
-                        Toast.makeText(Getaddressforlaundry.this, messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(Getaddressforlaundry.this, "We got you covered", Toast.LENGTH_LONG).show();
                         UpdateAddressforlaundry();
                         Intent i_save = new Intent(Getaddressforlaundry.this, SelectingDetails.class);
                         //i_save.putExtra("savetotalprice", OrderedItemsDetailsForLaundry.totalprice);
@@ -1236,7 +1236,7 @@ public class Getaddressforlaundry extends AppCompatActivity implements OnMapRead
                                 sp_editaddrlaundry.commit();*/
                         startActivity(i_save);
                     } else if (status.equals("0")) {
-                        Toast.makeText(Getaddressforlaundry.this, messgae, Toast.LENGTH_LONG).show();
+                        Toast.makeText(Getaddressforlaundry.this, "The seller does not ship to this Pincode.", Toast.LENGTH_LONG).show();
                     }
 
                 } catch (Exception e) {

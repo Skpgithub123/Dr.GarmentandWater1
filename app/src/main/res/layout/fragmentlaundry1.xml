@@ -34,8 +34,8 @@
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/capture"
                 android:id="@+id/imagewashfold"
                 />
@@ -44,16 +44,16 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textSize="14sp"
                 android:text="washandfold"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:typeface="serif"
                 android:textColor="@color/blue"
                 android:id="@+id/txt_washfold"
-                android:lines="3"
                 />
 
 
@@ -73,8 +73,8 @@
             android:orientation="horizontal">
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:id="@+id/imagewashiron"
                 android:background="@drawable/capture"
                 />
@@ -82,13 +82,13 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="washandiron"
                 android:textSize="14sp"
                 android:textColor="@color/blue"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
-                android:lines="3"
                 android:typeface="serif"
                 android:textStyle="bold"
                 android:id="@+id/txt_washiron"
@@ -111,8 +111,8 @@
 
 
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:id="@+id/imagedrycleaning"
                 android:background="@drawable/capture"
                 />
@@ -120,12 +120,12 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textSize="14sp"
                 android:text="drycleaning"
                 android:textColor="@color/blue"
-                android:lines="3"
+                android:layout_marginTop="50dp"
                 android:gravity="center"
                 android:typeface="serif"
                 android:id="@+id/txt_drycleaning"
