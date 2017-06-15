@@ -61,7 +61,7 @@ public class WaterItemDetails extends AppCompatActivity {
     int total=0,total_sub=0,finalitemquantity=0;
     SharedPreferences sp;
     public static Spinner sp_deliverytypes;
-    RelativeLayout relativeLayout;
+    LinearLayout relativeLayout;
     String Incrementstatus = "",Decrementstatus = "",Returnemptycanstatus = "",totalcan,price, Addingreturncanstatus="", Subtractreturncanstatus="";
     ArrayList<String> deliverytypes = new ArrayList<>();
     ArrayAdapter<String> delivery_slots;
@@ -74,7 +74,7 @@ public class WaterItemDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.water_itemdetails);
+        setContentView(R.layout.water_itemdetails1);
 
         get_waterid = (String) getIntent().getExtras().get("sendwaterid");
         Log.e("waterid", get_waterid);
@@ -91,7 +91,7 @@ public class WaterItemDetails extends AppCompatActivity {
         imgsubreturncan = (ImageView)findViewById(R.id.img_subreturncan);
         txtreturncan = (TextView)findViewById(R.id.txt_valuereturncan);
         tvinitialprice = (TextView)findViewById(R.id.txt_initialprice);
-        relativeLayout = (RelativeLayout)findViewById(R.id.rr_wateritemdetails);
+        relativeLayout = (LinearLayout)findViewById(R.id.ll_wateritemdetails);
         LL_pricelayout_water = (LinearLayout)findViewById(R.id.LL_pricelayout_water);
         sp = getSharedPreferences(MYPREFERNCES_LOGIN, 0);
         getauthkey = sp.getString("auth_key", "");
@@ -338,6 +338,7 @@ public class WaterItemDetails extends AppCompatActivity {
                     if (!TextUtils.isEmpty(itemprice)) {
                         tvitemprice.setText("\u20B9" + itemprice);
                         tvinitialprice.setText(itemprice);
+                        Log.e("tvinitialprice", tvinitialprice.getText().toString());
                     }
 
                     if (!TextUtils.isEmpty(itemimg)) {

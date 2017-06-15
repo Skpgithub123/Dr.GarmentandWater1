@@ -23,11 +23,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AlphaAnimation;
 import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -79,7 +81,7 @@ public class LandingWaterFragment extends Fragment {
     TextView txt_pincodeheading,txt_bisname,txt_kinleyname,txt_normalname,txt_bisprice,txt_kinleyprice,txt_normalprice;
     private static final int PERMISSION_REQUEST_CODE = 200;
     ListView lv_waterbrands;
-
+    LinearLayout ll_dialogcheckdelivery;
     WaterStrings water_strings;
     WaterAdapter _wateradapter;
 
@@ -88,6 +90,7 @@ public class LandingWaterFragment extends Fragment {
     Dialog dialog_tockeckdelivery;
     EditText ed_deliverytocheck;
     Button btn_checkdelivery;
+    Animation shake;
    // ImageView img_closecheckdeliverypopup;
 
     @Override
@@ -137,7 +140,9 @@ public class LandingWaterFragment extends Fragment {
 
         dialog_tockeckdelivery = new Dialog(getActivity());
         dialog_tockeckdelivery.setContentView(R.layout.dialog_tocheckdelivery);
+        shake = AnimationUtils.loadAnimation(getActivity(), R.anim.vibrate);
         ed_deliverytocheck = (EditText)dialog_tockeckdelivery.findViewById(R.id.ed_pincodeentry);
+        ll_dialogcheckdelivery = (LinearLayout)dialog_tockeckdelivery.findViewById(R.id.ll_dialogcheckdelivery);
         btn_checkdelivery = (Button)dialog_tockeckdelivery.findViewById(R.id.btn_checkdelivery);
         txt_pincodeheading = (TextView)dialog_tockeckdelivery.findViewById(R.id.txt_pincodeheading);
         //img_closecheckdeliverypopup = (ImageView)dialog_tockeckdelivery.findViewById(R.id.img_closecheckdeliverypopup);
@@ -323,6 +328,8 @@ public class LandingWaterFragment extends Fragment {
                     } else if (status.equals("0")) {
                         Toast.makeText(getActivity(), "The seller does not ship to this Pincode.", Toast.LENGTH_LONG).show();
                         txt_pincodeheading.setText("Try another Pincode");
+                        txt_pincodeheading.setTextColor(Color.RED);
+                        ll_dialogcheckdelivery.startAnimation(shake);
                     }
 
                 } catch (Exception e) {

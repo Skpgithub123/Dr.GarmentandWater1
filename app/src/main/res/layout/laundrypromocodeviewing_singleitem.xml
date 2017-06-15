@@ -12,7 +12,7 @@
         android:layout_marginTop="10dp"
         android:orientation="vertical"
         android:elevation="5dp"
-        android:backgroundTint="@color/cb_dark_grey"
+        android:backgroundTint="@color/teal_700"
         android:background="@drawable/bordor_shadow_promo"
         android:padding="2dp">
 
