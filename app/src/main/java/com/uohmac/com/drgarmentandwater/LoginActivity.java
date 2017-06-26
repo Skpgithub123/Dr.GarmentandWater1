@@ -118,7 +118,7 @@ public class LoginActivity extends AppCompatActivity {
     private com.facebook.AccessToken _token;
     String ID,firstName,lastName,u,auth_key_fbalreadyexist="",mob_fbalreadyexist="";
 
-EditText et;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
